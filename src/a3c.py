@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from utils import init_weights
 
 torch.set_default_dtype(torch.float64)
 
@@ -18,6 +19,7 @@ class ActorCritic(nn.Module):
         self.dense2 = nn.Linear(32, 32)
         self.policy = nn.Linear(32, action_space)
         self.value = nn.Linear(32, 1)
+        self.apply(init_weights)
 
     def forward(self, state):
         """Forward propagation.
