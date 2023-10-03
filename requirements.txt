@@ -2,7 +2,7 @@ cloudpickle==1.3.0
 future==0.18.2
 gym==0.17.1
 numpy==1.18.3
-Pillow==7.1.2
+Pillow==10.0.1
 pyglet==1.5.0
 scipy==1.4.1
 six==1.14.0
